@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron survey-jumbo">
+
+            <div class="user-info">
+                <h3>Survey Questions:</h3>
+                <hr>
+                <h4>About You:</h4>
+
+                <form action="/" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name (required)</label>
+                        <input type="name" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Link to Photo (required)</label>
+                        <input type="photo" class="form-control" id="photoLink" placeholder="Enter image URL">
+                    </div>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="guidelines">
+                <p>
+                    <span class="red">
+                        1 = Strongly Disagree
+                    </span> 
+                    <span class="gray">|</span> 
+                    <span class="green">
+                        5 = Strongly Agree
+                    </span>
+                </p>
+            </div>
+
+            <div class="questions">
+                <h4>Question 1:</h4>
+                <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-1" id="choose-1" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-1" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-1" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-1" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-1" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 2:</h4>
+                <p>Generally speaking, you rely more on your experience than your imagination.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-2" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-2" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-2" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-2" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-2" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 3:</h4>
+                <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-3" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-3" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-3" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-3" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-3" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 4:</h4>
+                <p>You rarely do something just out of sheer curiosity.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-4" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-4" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-4" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-4" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-4" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 5:</h4>
+                <p>People can rarely upset you.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-5" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-5" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-5" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-5" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-5" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 6:</h4>
+                <p>It is often difficult for you to relate to other people’s feelings.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-6" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-6" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-6" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-6" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-6" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 7:</h4>
+                <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-7" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-7" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-7" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-7" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-7" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 8:</h4>
+                <p>You rarely get carried away by fantasies and ideas.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-8" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-8" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-8" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-8" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-8" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 9:</h4>
+                <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-9" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-9" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-9" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-9" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-9" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h4>Question 10:</h4>
+                <p>You feel more energetic after spending time with a group of people.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="1" name="choose-10" aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="1">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="2" name="choose-10"  aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="3" name="choose-10"  aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="4" name="choose-10"  aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" value="5" name="choose-10"  aria-label="Radio button for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
+                </div>
+            </div>
+
+            <a href="#"><button type="button submit" class="btn btn-primary text-center submit-btn" id="submit">Submit Survey</button></a>
+
+        </div>
+
+        <div class="bottom-links">
+            <a href="/api/friends">API Friends List</a> |
+            <a href="https://github.com/racheljlee/friendfinder">GitHub Repo</a>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $("#submit").on("click", function() {
+            var scores = [];
+
+            for (var i = 0; i < $("input:radio:checked").length; i++) {
+                scores.push($(`input:radio[name="choose-${i+1}"]:checked`).val());
+            };
+
+            var newFriend = {
+                name: $("#inputName").val().trim(),
+                photo: $("#photoLink").val().trim(),
+                scores: scores,
+                routeName: $("#inputName").val().trim().replace(/\s + /g, "").toLowerCase() // get rid of any spaces inbetween and then make it lowercase
+            };
+
+            $.post("/api/friends", newFriend, data => {
+                console.log(data); // data is coming from res.send from back-end (apiRoutes.js); contains object of bestFriend
+            });
+        });
+    </script>
+</body>
+
+</html>
