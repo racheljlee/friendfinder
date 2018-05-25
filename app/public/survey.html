@@ -38,8 +38,8 @@
                 <p>
                     <span class="red">
                         1 = Strongly Disagree
-                    </span> 
-                    <span class="gray">|</span> 
+                    </span>
+                    <span class="gray">|</span>
                     <span class="green">
                         5 = Strongly Agree
                     </span>
@@ -376,7 +376,9 @@
 
             <div class="questions">
                 <h4>Question 9:</h4>
-                <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+                <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                    not.
+                </p>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
@@ -428,35 +430,37 @@
 
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input type="radio" value="2" name="choose-10"  aria-label="Radio button for following text input">
+                            <input type="radio" value="2" name="choose-10" aria-label="Radio button for following text input">
                         </div>
                     </div>
                     <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="2">
 
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input type="radio" value="3" name="choose-10"  aria-label="Radio button for following text input">
+                            <input type="radio" value="3" name="choose-10" aria-label="Radio button for following text input">
                         </div>
                     </div>
                     <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="3">
 
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input type="radio" value="4" name="choose-10"  aria-label="Radio button for following text input">
+                            <input type="radio" value="4" name="choose-10" aria-label="Radio button for following text input">
                         </div>
                     </div>
                     <input type="text" class="form-control number" aria-label="Text input with radio button" placeholder="4">
 
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input type="radio" value="5" name="choose-10"  aria-label="Radio button for following text input">
+                            <input type="radio" value="5" name="choose-10" aria-label="Radio button for following text input">
                         </div>
                     </div>
                     <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="5">
                 </div>
             </div>
 
-            <a href="#"><button type="button submit" class="btn btn-primary text-center submit-btn" id="submit">Submit Survey</button></a>
+
+            <button type="button submit" class="btn btn-primary text-center submit-btn" id="submit" data-toggle="modal" data-target="#myModal">Submit Survey</button>
+
 
         </div>
 
@@ -465,19 +469,47 @@
             <a href="https://github.com/racheljlee/friendfinder">GitHub Repo</a>
         </div>
 
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" id="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Your bestie is...</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
 
-
+    <!-- jQuery Library -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
+    <!-- Bootstrap jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
     <script>
-        $("#submit").on("click", function() {
+        $("#submit").on("click", function () {
             var scores = [];
 
             for (var i = 0; i < $("input:radio:checked").length; i++) {
-                scores.push($(`input:radio[name="choose-${i+1}"]:checked`).val());
+                scores.push($(`input:radio[name="choose-${i + 1}"]:checked`).val());
             };
 
             var newFriend = {
@@ -490,7 +522,25 @@
             $.post("/api/friends", newFriend, data => {
                 console.log(data); // data is coming from res.send from back-end (apiRoutes.js); contains object of bestFriend
             });
+            // createBestFriendModal(data);
         });
+
+        // function createBestFriendModal(data) {
+        //     var modalContentDiv = $("#modal-content");
+        //     var modalBody = $(`<div class="modal-body"><h3>${data.name}</h3>`);
+        //     var modalImg = $(`<img src="${data.photo}">`);
+
+        //     modalContentDiv.append(modalBody);
+        //     modalBody.append(modalImg);
+
+        //     var modalFooter = $(`<div class="modal-footer">`);
+        //     var buttonClose = $(`<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>`);
+
+        //     modalFooter.append(buttonClose);
+        //     modalContentDiv.append(buttonClose);
+
+        // };
+
     </script>
 </body>
 
